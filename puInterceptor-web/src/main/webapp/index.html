@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+        <body>
+        <h1>JavaEE - Injection of Persisting Unit using Interceptor</h1><br><br>
+        
+        Scenario: Dynamic injection of different Persistence Unit for persisting in different Entities in run time using Interceptor. <br/><br/>
+        
+        For persisting in <b>database1</b>: <br/><br/>
+        
+        Request method: <b>GET method</b><br/>
+        Response format: <b>JSON format</b><br/>
+        API: <b>http://localhost:8080/puInterceptor-web/api/database1</b><br/><br/>
+            
+            
+        Request method: <b>POST method</b><br/>
+        Request body: <code>
+            {
+                "persistenceUnitName": "Database1-PU", 
+                "description": "Persisting in tableA"
+            }</code><br/>
+        Response format: <b>JSON format</b><br/>
+        API: <b>http://localhost:8080/puInterceptor-web/api/database1</b><br/><br/>
+        
+        For persisting in <b>database2</b>: <br/><br/>
+        
+        Request method: <b>GET method</b><br/>
+        Response format: <b>JSON format</b><br/>
+        API: <b>http://localhost:8080/puInterceptor-web/api/database2</b><br/><br/>
+            
+            
+        Request method: <b>POST method</b><br/>
+        Request body: <code>
+            {
+                "persistenceUnitName": "Database2-PU", 
+                "description": "Persisting in tableB"
+            }</code><br/>
+        Response format: <b>JSON format</b><br/>
+        API: <b>http://localhost:8080/puInterceptor-web/api/database2</b><br/><br/>
+        
+    </body>
+</html>
